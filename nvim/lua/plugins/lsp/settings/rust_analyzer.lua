@@ -2,6 +2,9 @@ return {
     settings = {
         -- https://github.com/rust-lang/rust-analyzer/blob/master/docs/user/generated_config.adoc
         ["rust-analyzer"] = {
+            cargo = {
+                features = "all",
+            },
             completion = {
                 autoimport = {
                     enable = false,
@@ -17,7 +20,9 @@ return {
             },
             hover = {
                 actions = {
-                    references = true,
+                    references = {
+                        enable = true,
+                    },
                 },
             },
             check = {
