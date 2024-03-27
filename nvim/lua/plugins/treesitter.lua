@@ -40,6 +40,7 @@ return {
                 "markdown",
                 "markdown_inline",
                 "ninja",
+                "objdump",
                 "passwd",
                 "python",
                 "regex",
