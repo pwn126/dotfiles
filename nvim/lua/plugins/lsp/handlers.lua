@@ -94,7 +94,7 @@ local function lsp_keymaps(bufnr)
 
     -- local conform_ok, _ = pcall(require, "conform")
     -- if not conform_ok then
-    --     vim.keymap.set({ "n", "v" }, "<leader><leader>f", function() vim.lsp.buf.format({ async = true }) end,
+    --     vim.keymap.set({ "n", "v" }, "<leader>f", function() vim.lsp.buf.format({ async = true }) end,
     --         {
     --             noremap = true, silent = false, buffer = bufnr, desc = "Format"
     --         })
