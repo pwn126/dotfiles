@@ -16,7 +16,7 @@ return {
             start_in_insert = true,
             -- shading_factor = -10, -- the degree by which to darken to terminal colour, default: 1 for dark backgrounds, 3 for light
             -- float_opts = {
-            --     border = "rounded",
+            --     border = vim.g.BORDER,
             --     winblend = 0,
             --     highlights = {
             --         border = "Normal",
