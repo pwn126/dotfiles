@@ -355,5 +355,9 @@ return {
             --     },
             -- },
         });
+
+        vim.keymap.set("n", "<leader>tm", ":Markview toggleAll<cr>", {
+            desc = "Toggle mardown concealing",
+        })
     end
 }
