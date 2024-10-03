@@ -1,6 +1,12 @@
 #!/bin/zsh
 # shellcheck shell=bash
 
+if [[ "${OSTYPE}" == "darwin"* && ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
+    PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
+fi
+
+source <(fzf --zsh)
+
 # Use fd (https://github.com/sharkdp/fd) instead of the default find
 # command for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal
@@ -14,16 +20,13 @@ _fzf_compgen_dir() {
     fd --type d --hidden --follow --exclude ".git" . "$1"
 }
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-
 # export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git --exclude .sabnzbd"
 export FZF_DEFAULT_COMMAND="fd --unrestricted --exclude .git --exclude .sabnzbd"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # export FZF_ALT_C_COMMAND="fd --type directory --hidden --exclude .git"
 export FZF_ALT_C_COMMAND="fd --type directory --unrestricted --exclude .git"
 
-export FZF_DEFAULT_OPTS="--history-size=10000 --cycle \
+export FZF_DEFAULT_OPTS="--history-size=200000 --cycle \
     --color fg+:italic:#eceff4 \
     --color bg+:#3c465a \
     --color hl+:italic:#ebcb8b \
