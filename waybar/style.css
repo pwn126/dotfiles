@@ -1,0 +1,90 @@
+@import "mocha.css";
+
+* {
+    transition: none;
+    box-shadow: none;
+}
+
+#waybar {
+    font-family: 'Hack Nerd Font';
+    font-size: 1.2em;
+    font-weight: 400;
+
+    color: @text;
+    background-color: shade(@base, 0.9);
+    border: 2px solid alpha(@crust, 0.3);
+}
+
+#workspaces {
+    margin: 0 4px;
+}
+
+#workspaces button {
+    margin: 4px 0;
+    padding: 0 4px;
+    color: @text;
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.active {
+    border-radius: 4px;
+    color: @base;
+    background-color: @green;
+}
+
+#workspaces button.urgent {
+    color: rgba(238, 46, 36, 1);
+    background-color: @red;
+}
+
+#tray {
+    margin: 4px 4px 4px 4px;
+    border-radius: 4px;
+    background-color: @base;
+}
+
+#tray * {
+    padding: 0 6px;
+    border-left: 1px solid @base;
+}
+
+#tray *:first-child {
+    border-left: none;
+}
+
+#mode, #battery, #cpu, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language{
+    margin: 4px 2px;
+    padding: 0 6px;
+    background-color: @base;
+    border-radius: 4px;
+    min-width: 20px;
+}
+
+#pulseaudio.muted {
+}
+
+#pulseaudio.bluetooth {
+}
+
+#clock {
+    margin-left: 0px;
+    margin-right: 4px;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#window {
+    font-size: 0.9em;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+#language {
+	font-size: 0.9em;
+	font-weight: 500;
+	letter-spacing: -1px;
+}
