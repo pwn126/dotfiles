@@ -34,19 +34,17 @@ format = "[$symbol$branch(:$remote_branch)]($style) "
 style = "bold purple"
 
 [hostname]
-ssh_symbol = "🌐"
-format = "[$ssh_symbol$hostname]($style) "
-style = "blue dimmed bold"
+# ssh_symbol = "🌐"
+ssh_symbol = ""
+# format = "[$ssh_symbol$hostname]($style) "
+format = "on [$hostname]($style) "
+style = "red bold"
 
 [status]
 disabled = false
-# symbol = ""
-# symbol = ""
-# symbol = ""
 symbol = ""
-format = "[$symbol $status]($style)"
 style = "dimmed bold red"
 
 [username]
 format = "[$user]($style) "
-style_user = "yellow bold"
+style_user = "white bold"
