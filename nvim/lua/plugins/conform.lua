@@ -8,7 +8,8 @@ return {
             function()
                 require("conform").format({
                     async = false,
-                    lsp_fallback = "always",
+                    -- never (default), fallback, prefer, first, last
+                    lsp_format = "first",
                 })
             end,
             { "n", "v" },
