@@ -33,11 +33,5 @@ bindkey "" edit-command-line # ctrl-e to edit cmd line
 
 if [[ -z ${DISPLAY} && $(tty) = /dev/tty1 ]]; then
     export BROWSER="/usr/bin/brave"
-    export XCURSOR_PATH=""
-    export XCURSOR_SIZE=16
-    export GTK_OVERLAY_SCROLLING=0
-    export _JAVA_AWT_WM_NONREPARENTING=1
-    export MOZ_WEBRENDER=1
-
-    sx
+    Hyprland
 fi
