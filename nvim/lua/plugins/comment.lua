@@ -11,6 +11,7 @@ return {
         ft.set("cfg", "# %s")
         ft.set("in", "# %s")
         ft.set("hog", "# %s")
+        ft.set("wit", "/// %s")
 
         require("Comment").setup({
             pre_hook = function(ctx)
