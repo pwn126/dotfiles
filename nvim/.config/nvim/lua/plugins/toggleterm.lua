@@ -12,17 +12,16 @@ return {
                     return vim.o.columns * 0.4
                 end
             end,
-            open_mapping = [[<c-t>]],
+            -- open_mapping = [[<c-t>]],
+            open_mapping = [[t]],
+            insert_mappings = false,
             start_in_insert = true,
-            -- shading_factor = -10, -- the degree by which to darken to terminal colour, default: 1 for dark backgrounds, 3 for light
-            -- float_opts = {
-            --     border = vim.g.BORDER,
-            --     winblend = 0,
-            --     highlights = {
-            --         border = "Normal",
-            --         background = "Normal",
-            --     },
-            -- },
         }
+        vim.keymap.set("t", "jj", "<C-\\><C-n>", {
+            desc = "Exit terminal mode"
+        })
+        vim.keymap.set("t", "kk", "<C-\\><C-n>", {
+            desc = "Exit terminal mode"
+        })
     end
 }
