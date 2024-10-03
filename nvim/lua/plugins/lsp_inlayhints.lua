@@ -2,7 +2,7 @@
 
 return {
     "lvimuser/lsp-inlayhints.nvim",
-    enable = false,
+    enabled = false,
     branch = "main",
     event = { "BufWinEnter" },
     config = function()
