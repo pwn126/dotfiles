@@ -3,7 +3,7 @@
 return {
     "mrcjkb/rustaceanvim",
     enabled = true,
-    version = "^5",
+    -- version = "^5",
     ft = { "rust" },
     config = function()
         vim.g.rustaceanvim = {

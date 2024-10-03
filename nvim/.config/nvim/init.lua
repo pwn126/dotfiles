@@ -27,7 +27,7 @@ if lazy_ok then
     }, {
         -- check for plugin updates and notify
         checker = {
-            enable = true,
+            enabled = false,
             notify = true,
         },
         -- check for config updates to update the UI but do not notify
@@ -37,6 +37,9 @@ if lazy_ok then
         ui = {
             border = "rounded",
         },
+        rocks = {
+            enabled = false
+        }
     })
 else
     vim.notify("Lazy failed to setup plugins", vim.log.levels.ERROR)
