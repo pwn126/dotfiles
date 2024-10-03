@@ -7,7 +7,7 @@ export VDPAU_DRIVER="nvidia"
 export EDITOR=nvim
 export SUDO_EDITOR="nvim"
 export DIFFPROG="nvim -d"
-export PATH="${PATH}:${HOME}/.local/bin"
+export PATH="${PATH}:${HOME}/.local/cargo"
 export SYSTEMD_EDITOR=nvim
 
 export STARSHIP_CONFIG="${HOME}/.config/zsh/starship.toml"
