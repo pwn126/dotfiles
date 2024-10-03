@@ -17,7 +17,7 @@ return {
             styles = {
                 conditionals = {},
             },
-            no_italic = false,
+            no_italic = true,
             no_underline = true,
             integrations = {
                 cmp = true,
