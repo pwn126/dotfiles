@@ -1,3 +1,5 @@
+-- markview - https://github.com/OXY2DEV/markview.nvim
+
 return {
     "OXY2DEV/markview.nvim",
     ft = "markdown",
@@ -10,19 +12,8 @@ return {
         local markview = require("markview")
 
         require("markview").setup({
-            -- options = {
-            --     on_enable = {},
-            --     on_disable = {}
-            -- },
-
-            -- block_quotes = {},
-            -- checkboxes = {},
-            -- code_blocks = {},
-            -- horizontal_rules = {},
-            -- inline_codes = {},
-            -- links = {},
-            -- list_items = {},
-            -- tables = {}
+            -- modes = { "n", "no", "c" },
+            -- hybrid_modes = { "i" },
             code_blocks = {
                 enable = true,
 
@@ -47,7 +38,7 @@ return {
                         type = "repeating",
                         repeat_amount = function() --[[@as function]]
                             local textoff = vim.fn.getwininfo(vim.api.nvim_get_current_win())[1]
-                            .textoff;
+                                .textoff;
 
                             return math.floor((vim.o.colorcolumn - textoff) / 2);
                         end,
@@ -70,7 +61,7 @@ return {
                         type = "repeating",
                         repeat_amount = function() --[[@as function]]
                             local textoff = vim.fn.getwininfo(vim.api.nvim_get_current_win())[1]
-                            .textoff;
+                                .textoff;
 
                             -- return math.ceil((vim.o.columns - textoff - 3) / 2);
                             return math.ceil((vim.o.colorcolumn - textoff) / 2);
@@ -328,36 +319,10 @@ return {
                     end
                 }
             },
-            -- highlight_groups = {
-            --     {
-            --         group_name = "label_h1",
-            --         value = { bg = "#453244", fg = "#f38ba8", bold = true }
-            --     },
-            --     {
-            --         group_name = "label_h2",
-            --         value = { bg = "#46393e", fg = "#fab387", bold = true }
-            --     },
-            --     {
-            --         group_name = "label_h3",
-            --         value = { bg = "#464245", fg = "#f9e2af", bold = true }
-            --     },
-            --     {
-            --         group_name = "label_h4",
-            --         value = { bg = "#374243", fg = "#a6e3a1", bold = true }
-            --     },
-            --     {
-            --         group_name = "label_h5",
-            --         value = { bg = "#2e3d51", fg = "#74c7ec", bold = true }
-            --     },
-            --     {
-            --         group_name = "label_h6",
-            --         value = { bg = "#393b54", fg = "#b4befe", bold = true }
-            --     },
-            -- },
         });
 
-        vim.keymap.set("n", "<leader>tm", ":Markview toggleAll<cr>", {
-            desc = "Toggle mardown concealing",
+        vim.keymap.set("n", "<leader>tm", ":Markview toggle<cr>", {
+            desc = "Toggle markdown concealing",
         })
     end
 }
