@@ -9,6 +9,12 @@ return {
         },
     },
     config = function()
-        require("outline").setup {}
+        require("outline").setup {
+            keymaps = {
+                -- Jump to symbol under cursor but keep focus on outline window.
+                peek_location = "p",
+                toggle_preview = "P",
+            }
+        }
     end,
 }
