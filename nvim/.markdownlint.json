@@ -1,0 +1,10 @@
+{
+    "line-length": {
+        "strict": true,
+        "code_blocks": false,
+        "code_block_line_length": 100,
+        "heading_line_length": 100,
+        "line_length": 100,
+        "tables": false
+    }
+}
