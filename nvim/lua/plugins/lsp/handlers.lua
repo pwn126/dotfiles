@@ -66,7 +66,7 @@ local function lsp_keymaps(bufnr)
         print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, {
         buffer = bufnr,
-        desc = "List workspace folders"
+        desc = "List workspace folders",
     })
 
     if vim.uv.os_uname().sysname == "Darwin" then
@@ -168,7 +168,7 @@ m.on_attach = function(client, bufnr)
         vim.diagnostic.disable(bufnr)
     end
 
-    if client.supports_method "textDocument/inlayHint" then
+    if client.supports_method("textDocument/inlayHint") then
         vim.lsp.inlay_hint.enable(bufnr, true)
     end
 end

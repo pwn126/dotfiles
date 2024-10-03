@@ -45,6 +45,7 @@ return {
                 "beautysh",
                 "black",
                 "clang-format",
+                "codelldb",
                 "gitlint",
                 "isort",
                 "markdownlint",
