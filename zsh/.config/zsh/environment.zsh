@@ -3,7 +3,8 @@
 
 export SHELL="/usr/bin/zsh"
 export EDITOR=nvim
-export BROWSER="/usr/bin/zen-browser"
+# export BROWSER="/usr/bin/zen-browser"
+export BROWSER="/usr/bin/brave"
 export SUDO_EDITOR="nvim"
 export DIFFPROG="nvim -d"
 export SYSTEMD_EDITOR=nvim
