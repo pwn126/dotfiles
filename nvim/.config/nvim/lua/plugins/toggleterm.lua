@@ -15,6 +15,7 @@ return {
             -- open_mapping = [[<c-t>]],
             open_mapping = [[t]],
             insert_mappings = false,
+            terminal_mappings = false,
             start_in_insert = true,
         }
         vim.keymap.set("t", "jj", "<C-\\><C-n>", {
