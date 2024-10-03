@@ -12,6 +12,7 @@
     ],
     "modules-right": [
         "hyprland/submap",
+        "custom/vpn",
         "network",
         "cpu",
         "memory",
@@ -113,8 +114,8 @@
     "pulseaudio": {
         // "scroll-step": 10, // %, can be a float
         "format": "  {volume}%  {format_source}",
-        "format-bluetooth": "  {volume}% {format_source}",
-        "format-bluetooth-muted": "-  {format_source}",
+        // "format-bluetooth": "  {volume}% {format_source}",
+        // "format-bluetooth-muted": "-  {format_source}",
         "format-muted": "  {format_source}",
         // "format-source": "{volume}% ",
         "format-source": "",
@@ -133,5 +134,12 @@
             ]
         },
         "on-click": "pavucontrol"
+    },
+
+    "custom/vpn": {
+        "return-type": "json",
+        "format": "{}",
+            "interval": 2,
+            "exec": "~/.config/waybar/scripts/vpn-status.sh",
     }
 }
