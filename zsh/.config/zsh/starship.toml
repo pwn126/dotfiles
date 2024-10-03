@@ -3,50 +3,78 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+palette = "catppuccin_mocha"
+
 format = """
 $username\
 $hostname\
 $directory\
 $git_branch\
 $git_commit\
+$line_break\
 $character\
 """
-# $line_break\
 
 right_format = """
 $status\
 """
 
-add_newline = false
+add_newline = true
 
 [character]
 success_symbol = "[➜](bold white)"
 error_symbol = "[➜](bold red)"
 
 [directory]
-style = "bold white"
+style = "bold text"
 format = "[$path]($style) "
 
 [git_branch]
 format = "[$symbol$branch(:$remote_branch)]($style) "
+style = "bold mauve"
 
 [git_commit]
-style = "bold purple"
+style = "bold mauve"
 
 [hostname]
-ssh_symbol = "@"
+ssh_symbol = "🌐"
 format = "[$ssh_symbol$hostname]($style) "
-style = "blue dimmed bold"
+style = "blue bold"
 
 [status]
 disabled = false
-# symbol = ""
-# symbol = ""
-# symbol = ""
 symbol = ""
-format = "[$symbol $status]($style)"
-style = "dimmed bold red"
+style = "dimmed red"
 
 [username]
+show_always = true
 format = "[$user]($style) "
-style_user = "yellow bold"
+style_user = "blue bold"
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
