@@ -50,7 +50,6 @@ vim.opt.spelllang = "en_us,de"
 vim.opt.softtabstop = indent
 vim.opt.swapfile = false
 vim.opt.tabstop = indent
-vim.opt.termguicolors = true
 vim.opt.textwidth = textwidth
 vim.opt.title = true
 vim.opt.titlestring = "%t%( %M%)%( (%{expand('%:~:.:h')})%)"
