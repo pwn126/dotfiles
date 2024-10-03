@@ -141,12 +141,12 @@ vim.keymap.set("n", "<leader>ti", require("core.utils").toggleIndentation, {
 vim.keymap.set("v", "<leader>rn", '"hy:%s/<c-r>h//g<left><left>', {
     desc = "Replace visually highlighted term",
 })
-vim.keymap.set("n", "<leader><leader>T", "<cmd>Lexplore %:p:h<cr>", {
-    desc = "Open netrw in the directory of the current file",
-})
-vim.keymap.set("n", "<leader><leader>t", "<cmd>20Lexplore<cr>", {
-    desc = "Open netrw in the current working directory",
-})
+-- vim.keymap.set("n", "<leader><leader>T", "<cmd>Lexplore %:p:h<cr>", {
+--     desc = "Open netrw in the directory of the current file",
+-- })
+-- vim.keymap.set("n", "<leader><leader>t", "<cmd>20Lexplore<cr>", {
+--     desc = "Open netrw in the current working directory",
+-- })
 vim.keymap.set("n", "<leader>cq", require("core.utils").toggleQuickfixWindow, {
     desc = "Open/close quickfix windows",
 })
@@ -167,7 +167,4 @@ vim.keymap.set("n", "Q", "@qj", {
 })
 vim.keymap.set("x", "Q", "<cmd>norm @q<cr>", {
     desc = "Playback the macro from the q register on a visual selection",
-})
-vim.keymap.set("t", "jj", "<C-\\><C-n>", {
-    desc = "Exit terminal mode"
 })
