@@ -17,13 +17,25 @@ return {
             styles = {
                 conditionals = {},
             },
+            no_italic = false,
+            no_underline = true,
             integrations = {
                 cmp = true,
+                dap = true,
+                dap_ui = true,
                 gitsigns = true,
                 fidget = true,
-                illuminate = true,
+                illuminate = {
+                    enabled = true,
+                    lsp = true,
+                },
+                indent_blankline = {
+                    enabled = true,
+                    colored_indent_levels = false,
+                },
                 markdown = true,
                 mason = true,
+                neotree = true,
                 notify = true,
                 telescope = true,
                 treesitter = true,
@@ -31,14 +43,8 @@ return {
                 which_key = true,
                 native_lsp = {
                     enabled = true,
-                    underlines = {
-                        errors = {},
-                        hints = {},
-                        warnings = {},
-                        information = {},
-                    },
                     inlay_hints = {
-                        background = false,
+                        background = true,
                     },
                 },
             },
