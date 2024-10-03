@@ -3,7 +3,7 @@
 
 hash -dr
 hash -d log=/var/log
-hash -d config=~/.config
-hash -d nvim=~/.config/nvim
-hash -d downloads=~/downloads
-hash -d tmp=~/tmp
+hash -d config=${HOME}/.config
+hash -d nvim=${HOME}/.config/nvim
+hash -d downloads=${HOME}/downloads
+hash -d tmp=${HOME}/tmp
