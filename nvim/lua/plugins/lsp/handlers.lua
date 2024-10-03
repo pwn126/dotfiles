@@ -138,7 +138,7 @@ m.setup = function()
         float = {
             focusable = false,
             style = "minimal",
-            border = "rounded",
+            border = vim.g.BORDER,
             source = true,
             header = "",
             prefix = "",
@@ -154,7 +154,7 @@ m.setup = function()
     local handlers_config = {
         focusable = true,
         style = "minimal",
-        border = "rounded",
+        border = vim.g.BORDER,
     }
 
     vim.diagnostic.config(diagnostics_config)

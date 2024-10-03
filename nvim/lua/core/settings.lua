@@ -54,8 +54,10 @@ vim.opt.textwidth = textwidth
 vim.opt.title = true
 vim.opt.titlestring = "%t%( %M%)%( (%{expand('%:~:.:h')})%)"
 vim.opt.updatetime = 300
-vim.opt.whichwrap:append("<", ">", "[", "]")
+vim.opt.whichwrap:append("<,>,[,]")
 vim.opt.wrap = false
 vim.opt.writebackup = false
+
+vim.g.BORDER = "single"
 
 -- vim.lsp.set_log_level("debug")
