@@ -165,11 +165,11 @@ m.on_attach = function(client, bufnr)
     lsp_keymaps(bufnr)
 
     if vim.b[bufnr].diagnostics_disabled or vim.g.diagnostics_disabled then
-        vim.diagnostic.disable(bufnr)
+        vim.diagnostic.enable(false, { bufnr = bufnr })
     end
 
     if client.supports_method("textDocument/inlayHint") then
-        vim.lsp.inlay_hint.enable(bufnr, true)
+        vim.lsp.inlay_hint.enable(true, { bufnr = bufnr })
     end
 end
 
