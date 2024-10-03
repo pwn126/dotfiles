@@ -6,14 +6,14 @@
 
     "modules-left": [
         "hyprland/workspaces",
+        "hyprland/submap",
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-        "hyprland/submap",
-        "custom/vpn",
         "network",
+        "custom/vpn",
         "cpu",
         "memory",
         "temperature",
@@ -56,7 +56,7 @@
         "spacing": 0
     },
     "clock": {
-        "format": "{:%H:%M}",
+        "format": "{:%Y-%m-%d %H:%M}",
         "format-alt": "{:%Y-%m-%d}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>",
         "calendar": {
@@ -113,7 +113,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 10, // %, can be a float
-        "format": "  {volume}%  {format_source}",
+        "format": "{volume}%  {format_source}",
         // "format-bluetooth": "  {volume}% {format_source}",
         // "format-bluetooth-muted": "-  {format_source}",
         "format-muted": "  {format_source}",
