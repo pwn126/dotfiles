@@ -27,7 +27,7 @@ if lazy_ok then
     }, {
         -- check for plugin updates and notify
         checker = {
-            enable = true,
+            enabled = false,
             notify = true,
         },
         -- check for config updates to update the UI but do not notify
