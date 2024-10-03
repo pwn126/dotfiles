@@ -6,7 +6,10 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
         -- treesitter-context - https://github.com/nvim-treesitter/nvim-treesitter-context
-        "nvim-treesitter/nvim-treesitter-context",
+        {
+            "nvim-treesitter/nvim-treesitter-context",
+            commit = "0dd00bb6423b4c655e6a0f9dd2f5332167bb6d33"
+        },
         -- treesitter-textobjects - https://github.com/nvim-treesitter/nvim-treesitter-textobjects
         "nvim-treesitter/nvim-treesitter-textobjects",
     },
