@@ -31,7 +31,7 @@ return {
                 "lua_ls",
                 "marksman",
                 "pyright",
-                 -- "rust_analyzer@2024-04-15",
+                -- "rust_analyzer@2024-04-29",
                 "rust_analyzer",
                 "taplo",
                 "yamlls",
