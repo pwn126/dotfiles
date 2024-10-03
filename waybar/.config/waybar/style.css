@@ -80,6 +80,9 @@
 #custom-vpn.up {
     color: @red;
 }
+#custom-vpn.down {
+    color: @text;
+}
 
 #window {
     font-size: 0.9em;

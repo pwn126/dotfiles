@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ $(networkctl | awk '$2 ~ "wg0" {print $4}') == *routable* ]]; then
-    echo '{"text": "VPN", "class": "up"}'
+    echo '{"text": "vpn", "class": "up"}'
+else
+    echo '{"text": "vpn", "class": "down"}'
 fi
-
-echo '{"text": "", "tooltip": ""}'
