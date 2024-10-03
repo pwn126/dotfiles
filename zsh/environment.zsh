@@ -10,8 +10,7 @@ export DIFFPROG="nvim -d"
 export PATH="${PATH}:${HOME}/.local/bin"
 export SYSTEMD_EDITOR=nvim
 
-export XMONAD_CONFIG_DIR="${XDG_CONFIG_HOME}/xmonad"
-export XMONAD_DATA_DIR="${XDG_DATA_HOME}/xmonad"
-export XMONAD_CACHE_DIR="${XMONAD_DATA_DIR}"
-
 export STARSHIP_CONFIG="${HOME}/.config/zsh/starship.toml"
+
+export MANPAGER="less -R --use-color -Dd+r -Du+b"
+export MANROFFOPT="-c"
