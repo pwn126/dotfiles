@@ -115,20 +115,23 @@ end
 m.setup = function()
     local icons = require("core.icons")
 
-    local signs = {
-        { name = "DiagnosticSignError", text = icons.diagnostics.Error },
-        { name = "DiagnosticSignWarn",  text = icons.diagnostics.Warning },
-        { name = "DiagnosticSignHint",  text = icons.diagnostics.Hint },
-        { name = "DiagnosticSignInfo",  text = icons.diagnostics.Information },
-    }
-
-    for _, sign in ipairs(signs) do
-        vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
-    end
-
     local diagnostics_config = {
         virtual_text = true,
-        signs = true,
+        signs = {
+            text = {
+                [vim.diagnostic.severity.ERROR] = icons.diagnostics.Error,
+                [vim.diagnostic.severity.WARN] = icons.diagnostics.Warning,
+                [vim.diagnostic.severity.HINT] = icons.diagnostics.Hint,
+                [vim.diagnostic.severity.INFO] = icons.diagnostics.Information,
+            },
+            -- linehl = {},
+            numhl = {
+                [vim.diagnostic.severity.ERROR] = "",
+                [vim.diagnostic.severity.WARN] = "",
+                [vim.diagnostic.severity.HINT] = "",
+                [vim.diagnostic.severity.INFO] = "",
+            },
+        },
         underline = true,
         update_in_insert = true,
         severity_sort = true,
