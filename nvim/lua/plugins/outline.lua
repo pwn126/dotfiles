@@ -3,7 +3,7 @@ return {
     "hedyhli/outline.nvim",
     keys = {
         {
-            "<leader><leader>o",
+            "<leader>o",
             "<cmd>Outline<cr>",
             desc = "Toggle outline",
         },
