@@ -11,6 +11,7 @@ $git_branch\
 $git_commit\
 $character\
 """
+# $line_break\
 
 right_format = """
 $status\
@@ -33,7 +34,7 @@ format = "[$symbol$branch(:$remote_branch)]($style) "
 style = "bold purple"
 
 [hostname]
-ssh_symbol = "🌐"
+ssh_symbol = "@"
 format = "[$ssh_symbol$hostname]($style) "
 style = "blue dimmed bold"
 
