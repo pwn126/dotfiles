@@ -43,6 +43,7 @@ return {
                 "objdump",
                 "passwd",
                 "python",
+                "query",
                 "regex",
                 "rst",
                 "rust",
