@@ -94,7 +94,8 @@
     "pulseaudio": {
         "format": "{volume}%  ",
         "format-muted": "0%  ",
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "on-click-right": "bluetoothctl connect 14:28:76:CC:67:C1 && notify-send 'Airpods connected'"
     },
 
     "custom/vpn": {
