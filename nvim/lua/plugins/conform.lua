@@ -21,13 +21,13 @@ return {
 
         conform.setup({
             formatters_by_ft = {
-                cpp = { "clang_format", "trim_newlines", "trim_whitespace" },
-                lua = { "stylua", "trim_newlines", "trim_whitespace" },
-                markdown = { "prettier", "trim_newlines", "trim_whitespace" },
-                python = { "isort", "black", "trim_newlines", "trim_whitespace" },
-                sh = { "beautysh", "shellharden", "trim_newlines", "trim_whitespace" },
-                -- XXX currently broken
-                -- ["*"] = { "trim_newlines", "trim_whitespace" },
+                cpp = { "clang_format" },
+                lua = { "stylua" },
+                markdown = { "prettier" },
+                python = { "isort", "black" },
+                rust = { "rustfmt", lsp_format = "fallback" },
+                sh = { "beautysh", "shellharden" },
+                ["*"] = { "trim_newlines", "trim_whitespace" },
             },
             init = function()
                 vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"

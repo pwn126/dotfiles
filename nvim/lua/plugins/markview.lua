@@ -12,22 +12,18 @@ return {
         local markview = require("markview")
 
         require("markview").setup({
-            -- modes = { "n", "no", "c" },
-            -- hybrid_modes = { "i" },
             code_blocks = {
                 enable = true,
-
                 style = "language",
                 hl = "Layer2",
-
                 min_width = 60,
                 pad_amount = 3,
-
                 language_names = {
                     { "py",  "python" },
                     { "cpp", "C++" }
                 },
                 language_direction = "right",
+                sign = "",
             },
             horizontal_rules = {
                 enable = true,
@@ -51,12 +47,6 @@ return {
                             "MarkviewGradient10"
                         }
                     },
-                    -- {
-                    --     type = "text",
-                    --     text = "  ",
-                    --
-                    --     repeat_amount = vim.o.columns
-                    -- },
                     {
                         type = "repeating",
                         repeat_amount = function() --[[@as function]]
@@ -87,31 +77,37 @@ return {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol1",
+                    sign = "",
                 },
                 heading_2 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol2",
+                    sign = "",
                 },
                 heading_3 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol3",
+                    sign = "",
                 },
                 heading_4 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol4",
+                    sign = "",
                 },
                 heading_5 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol5",
+                    sign = "",
                 },
                 heading_6 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol6",
+                    sign = "",
                 },
             },
             highlight_groups = {
