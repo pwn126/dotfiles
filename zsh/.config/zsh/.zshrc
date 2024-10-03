@@ -32,5 +32,5 @@ bindkey "" edit-command-line # ctrl-e to edit cmd line
 # ==================================================================================================
 
 if [[ -z ${DISPLAY} && $(tty) = /dev/tty1 ]]; then
-    Hyprland
+    exec Hyprland
 fi
