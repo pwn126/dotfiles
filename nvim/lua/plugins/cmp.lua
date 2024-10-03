@@ -49,7 +49,7 @@ return {
             },
             window = {
                 documentation = {
-                    border = "rounded",
+                    border = vim.g.BORDER,
                     winhighlight =
                     "NormalFloat:Normal,FloatBorder:CompeFloatBorder,CursorLine:PmenuSel",
                     max_width = math.floor(
@@ -58,7 +58,7 @@ return {
                     max_height = math.floor(WIDE_HEIGHT * (WIDE_HEIGHT / vim.o.lines)),
                 },
                 completion = {
-                    border = "rounded",
+                    border = vim.g.BORDER,
                     winhighlight =
                     "NormalFloat:Normal,FloatBorder:CompeFloatBorder,CursorLine:PmenuSel",
                     max_width = math.floor(

@@ -103,7 +103,7 @@ return {
                 },
                 lsp_interop = {
                     enable = true,
-                    border = "rounded",
+                    border = vim.g.BORDER,
                     floating_preview_opts = {},
                     peek_definition_code = {
                         ["<leader>df"] = "@function.outer",
