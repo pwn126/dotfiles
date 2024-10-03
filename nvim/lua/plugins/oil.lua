@@ -2,7 +2,7 @@ return {
     "stevearc/oil.nvim",
     keys = {
         {
-            "<c-o>",
+            "<leader>o",
             "<cmd>Oil<cr>",
             desc = "Toggle Oil file explorer",
         },
