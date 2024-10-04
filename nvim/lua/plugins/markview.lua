@@ -37,9 +37,6 @@ return {
                     { "cpp", "C++" }
                 },
                 language_direction = "right",
-
-                sign = true,
-                sign_hl = nil
             },
             horizontal_rules = {
                 enable = true,
@@ -99,37 +96,31 @@ return {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol1",
-                    sign = "▶ ",
                 },
                 heading_2 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol2",
-                    sign = "▶ ",
                 },
                 heading_3 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol3",
-                    sign = "▶ ",
                 },
                 heading_4 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol4",
-                    sign = "▶ ",
                 },
                 heading_5 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol5",
-                    sign = "▶ ",
                 },
                 heading_6 = {
                     style = "label",
                     icon = require("core.icons").ui.BookMark .. " ",
                     hl = "MarkviewCol6",
-                    sign = "▶ ",
                 },
             },
             highlight_groups = {
