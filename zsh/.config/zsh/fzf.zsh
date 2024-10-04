@@ -20,10 +20,8 @@ _fzf_compgen_dir() {
     fd --type d --hidden --follow --exclude ".git" . "$1"
 }
 
-# export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git --exclude .sabnzbd"
-export FZF_DEFAULT_COMMAND="fd --unrestricted --exclude .git --exclude .sabnzbd"
+export FZF_DEFAULT_COMMAND="fd --unrestricted --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-# export FZF_ALT_C_COMMAND="fd --type directory --hidden --exclude .git"
 export FZF_ALT_C_COMMAND="fd --type directory --unrestricted --exclude .git"
 
 export FZF_DEFAULT_OPTS="--history-size=200000 --cycle \
