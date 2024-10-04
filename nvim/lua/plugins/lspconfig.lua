@@ -13,7 +13,7 @@ return {
             "clangd",
             "cmake",
             "pyright",
-            "rust_analyzer",
+            -- "rust_analyzer",
             "lua_ls",
             "taplo",
             "yamlls",
