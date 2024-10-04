@@ -111,32 +111,5 @@ return {
                 },
             },
         })
-
-        -- the parser for WIT is not officially integrated into nvim-tree-sitter. thus, it requires
-        -- some manual installation steps:
-        -- - copy the queries into the nvim-tree-sitter installation directory, e.g.,
-        --
-        --   ```bash
-        --   git clone https://github.com/hh9527/tree-sitter-wit.git ~/src/tree-sitter-wit
-        --   mkdir -p ~/.local/share/nvim/lazy/nvim-treesitter/queries/wit
-        --   cp ~/src/tree-sitter-wit/queries/* ~/.local/share/nvim/lazy/nvim-treesitter/queries/wit
-        --   ```
-        -- - open nvim and install the WIT parser with the following command:
-        --
-        -- ```
-        -- :TSInstallFromGrammar wit
-        -- ```
-        local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
-        parser_config.wit = {
-            install_info = {
-                url = "https://github.com/w31mann/tree-sitter-wit.git", -- local path or git repo
-                -- url = "/Users/philip/src/tree-sitter-wit", -- local path or git repo
-                files = { "src/parser.c" },                             -- note that some parsers also require src/scanner.c or src/scanner.cc
-                branch = "main",                                        -- default branch in case of git repo if different from master
-                -- generate_requires_npm = false,                         -- if stand-alone parser without npm dependencies
-                -- requires_generate_from_grammar = true,                -- if folder contains pre-generated src/parser.c
-            },
-            filetype = "wit", -- if filetype does not match the parser name
-        }
     end,
 }
