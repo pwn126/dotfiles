@@ -8,5 +8,3 @@ alias sudo="sudo "
 alias v=nvim
 alias vim=nvim
 alias vimdiff="nvim -d"
-
-alias -s pdf="zathura"

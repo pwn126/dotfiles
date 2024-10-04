@@ -5,5 +5,4 @@ hash -dr
 hash -d log=/var/log
 hash -d config=~/.config
 hash -d nvim=~/.config/nvim
-hash -d downloads=~/downloads
 hash -d tmp=~/tmp
