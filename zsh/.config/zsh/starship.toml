@@ -37,8 +37,8 @@ style = "bold mauve"
 style = "bold mauve"
 
 [hostname]
-ssh_symbol = "🌐"
-format = "[$ssh_symbol$hostname]($style) "
+ssh_only = false
+format = "[🌐$hostname]($style) "
 style = "blue bold"
 
 [status]
