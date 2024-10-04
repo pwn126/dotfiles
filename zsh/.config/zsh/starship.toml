@@ -9,6 +9,7 @@ $hostname\
 $directory\
 $git_branch\
 $git_commit\
+$line_break\
 $character\
 """
 
@@ -16,7 +17,7 @@ right_format = """
 $status\
 """
 
-add_newline = false
+add_newline = true
 
 [character]
 success_symbol = "[➜](bold white)"
