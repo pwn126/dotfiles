@@ -31,7 +31,7 @@
 #workspaces button.active {
     border-radius: 4px;
     color: @base;
-    background-color: @green;
+    background-color: @lavender;
 }
 
 #workspaces button.urgent {
@@ -58,8 +58,9 @@
     margin: 4px 2px;
     padding: 0 6px;
     background-color: @base;
-    border-radius: 4px;
     min-width: 20px;
+    border-radius: 1px;
+    border-bottom: 2px solid @base;
 }
 
 #clock {
@@ -68,6 +69,8 @@
     border-radius: 4px;
     min-width: 20px;
     font-weight: 900;
+    border-radius: 1px;
+    border-bottom: 2px solid @lavender;
 }
 
 #pulseaudio.muted {
@@ -81,10 +84,22 @@
 }
 
 #custom-vpn.up {
-    color: @red;
+    color: @text;
+    margin: 4px 2px;
+    padding: 0 6px;
+    background-color: @base;
+    min-width: 20px;
+    border-radius: 1px;
+    border-bottom: 2px solid @green;
 }
 #custom-vpn.down {
     color: @text;
+    margin: 4px 2px;
+    padding: 0 6px;
+    background-color: @base;
+    min-width: 20px;
+    border-radius: 1px;
+    border-bottom: 2px solid @base;
 }
 
 #window {

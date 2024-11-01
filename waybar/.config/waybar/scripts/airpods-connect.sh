@@ -9,7 +9,7 @@ bluetoothctl disconnect "$dev" || true
 sleep 2
 
 if bluetoothctl connect "$dev"; then
-    notify-send "Airpods connected"
+    notify-send --icon=audio-volume-medium "Airpods connected"
 else
-    notify-send "Airpods connection failed"
+    notify-send --icon=audio-volume-medium --urgency=critical "Airpods connection failed"
 fi
