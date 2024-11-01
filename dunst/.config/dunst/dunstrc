@@ -1,0 +1,25 @@
+[global]
+frame_color = "#8aadf4"
+separator_color = frame
+font = JetBrainsMono Nerd Font 12
+width = (0, 1500)
+height = 950
+min_icon_size = 48
+max_icon_size = 128
+frame_width = 2
+gap_size = 5
+icon_path = /usr/share/icons/Papirus-Dark/22x22/actions:/usr/share/icons/Papirus-Dark/22x22/emotes
+stack_duplicates = false
+
+[urgency_low]
+background = "#24273a"
+foreground = "#cad3f5"
+
+[urgency_normal]
+background = "#24273a"
+foreground = "#cad3f5"
+
+[urgency_critical]
+background = "#24273a"
+foreground = "#cad3f5"
+frame_color = "#f5a97f"
