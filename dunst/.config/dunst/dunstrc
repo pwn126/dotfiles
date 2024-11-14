@@ -1,5 +1,5 @@
 [global]
-frame_color = "#8aadf4"
+frame_color = "#b4befe"
 separator_color = frame
 font = JetBrainsMono Nerd Font 12
 width = (0, 1500)
