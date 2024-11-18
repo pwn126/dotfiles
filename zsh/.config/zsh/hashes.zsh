@@ -23,4 +23,6 @@ hash -d meta-raspi-gw=/home/user/src/mwd_internal/over-the-air/meta-raspi-gw
 hash -d compose=/home/user/src/docker/compose
 hash -d win_home=/mnt/c/Users/sjbh9k
 hash -d ota=/home/user/src/mwd_internal/over-the-air
+hash -d ucm=/home/user/src/mwd_internal/over-the-air/ucm
+hash -d bootctl=/home/user/src/mwd_internal/over-the-air/boot-control-application
 hash -d amt=/home/user/src/mwd/autosar-migration-toolkit
