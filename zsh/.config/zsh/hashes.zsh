@@ -7,3 +7,4 @@ hash -d config=~/.config
 hash -d nvim=~/.config/nvim
 hash -d downloads=~/downloads
 hash -d tmp=~/tmp
+hash -d notes=~/documents/notes.md
