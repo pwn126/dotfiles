@@ -2,8 +2,8 @@
 frame_color = "#b4befe"
 separator_color = frame
 font = JetBrainsMono Nerd Font 12
-width = (0, 1500)
-height = 950
+width = (300, 600)
+height = (100, 600)
 min_icon_size = 48
 max_icon_size = 128
 frame_width = 2
