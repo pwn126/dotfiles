@@ -1,8 +1,7 @@
 [global]
 frame_color = "#b4befe"
 separator_color = frame
-# font = JetBrainsMono Nerd Font 12
-font = FiraCode Nerd Font Mono 12
+font = JetBrainsMono 12
 width = (300, 600)
 height = (100, 600)
 min_icon_size = 48
